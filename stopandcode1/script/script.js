@@ -15,7 +15,6 @@ const randomNumber2 = Math.floor(Math.random() * 10 + 1);
 //else {
   //console.log("ritenta")
 //}
-const span = document.querySelector(".card.active span");
 const message = document.getElementById("message");
 const numberUser = document.getElementById("you");
 const numberPc = document.getElementById("cpu");
@@ -23,7 +22,6 @@ const selectButton = document.getElementById("play-button");
 console.log(numberUser);
 console.log(numberPc);
 console.log(selectButton);
-console.log(span);
 
 selectButton.addEventListener("click",
 function() {
@@ -38,7 +36,6 @@ function() {
   }
 }
 )
-
 
 
 
