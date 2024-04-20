@@ -15,6 +15,7 @@ const randomNumber2 = Math.floor(Math.random() * 10 + 1);
 //else {
   //console.log("ritenta")
 //}
+const span = document.querySelector(".card span");
 const message = document.getElementById("message");
 const numberUser = document.getElementById("you");
 const numberPc = document.getElementById("cpu");
@@ -22,20 +23,22 @@ const selectButton = document.getElementById("play-button");
 console.log(numberUser);
 console.log(numberPc);
 console.log(selectButton);
+console.log(span);
 
 selectButton.addEventListener("click",
 function() {
   console.log(you.innerHTML = randomNumber1);
   console.log(cpu.innerHTML = randomNumber2);
+  if (randomNumber1 > randomNumber2) {
+    console.log(message.innerHTML = "HAI VINTO!");
+  }
+  else{
+    console.log(message.innerHTML = "NON HAI VINTO!");
+  }
 }
 )
 
-if (randomNumber1 > randomNumber2) {
-  console.log(message.innerHTML = "HAI VINTO!");
-}
-else{
-  console.log(message.innerHTML = "NON HAI VINTO!");
-}
+
 
 
 
