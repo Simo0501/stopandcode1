@@ -15,7 +15,7 @@ const randomNumber2 = Math.floor(Math.random() * 10 + 1);
 //else {
   //console.log("ritenta")
 //}
-const span = document.querySelector(".card span");
+const span = document.querySelector(".card.active span");
 const message = document.getElementById("message");
 const numberUser = document.getElementById("you");
 const numberPc = document.getElementById("cpu");
@@ -31,12 +31,14 @@ function() {
   console.log(cpu.innerHTML = randomNumber2);
   if (randomNumber1 > randomNumber2) {
     console.log(message.innerHTML = "HAI VINTO!");
-  }
-  else{
+  }else if (randomNumber1 === randomNumber2){
+    console.log(message.innerHTML = "PAREGGIO!");
+  }else {
     console.log(message.innerHTML = "NON HAI VINTO!");
   }
 }
 )
+
 
 
 
