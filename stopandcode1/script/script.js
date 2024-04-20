@@ -15,7 +15,7 @@ const randomNumber2 = Math.floor(Math.random() * 10 + 1);
 //else {
   //console.log("ritenta")
 //}
-
+const message = document.getElementById("message");
 const numberUser = document.getElementById("you");
 const numberPc = document.getElementById("cpu");
 const selectButton = document.getElementById("play-button");
@@ -29,6 +29,13 @@ function() {
   console.log(cpu.innerHTML = randomNumber2);
 }
 )
+
+if (randomNumber1 > randomNumber2) {
+  console.log(message.innerHTML = "HAI VINTO!");
+}
+else{
+  console.log(message.innerHTML = "NON HAI VINTO!");
+}
 
 
 
