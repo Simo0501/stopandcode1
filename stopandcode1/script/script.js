@@ -22,10 +22,11 @@ const selectButton = document.getElementById("play-button");
 console.log(numberUser);
 console.log(numberPc);
 console.log(selectButton);
+
 selectButton.addEventListener("click",
 function() {
-  console.log(randomNumber1);
-  console.log(randomNumber2);
+  console.log(you.innerHTML = randomNumber1);
+  console.log(cpu.innerHTML = randomNumber2);
 }
 )
 
