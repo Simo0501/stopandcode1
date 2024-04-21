@@ -19,9 +19,11 @@ const message = document.getElementById("message");
 const numberUser = document.getElementById("you");
 const numberPc = document.getElementById("cpu");
 const selectButton = document.getElementById("play-button");
+const resetButton = document.getElementById("off-play");
 console.log(numberUser);
 console.log(numberPc);
 console.log(selectButton);
+console.log(resetButton);
 
 selectButton.addEventListener("click",
 function() {
@@ -36,6 +38,15 @@ function() {
   }
 }
 )
+
+resetButton.addEventListener("click",
+function() {
+  console.log(you.innerHTML = " ");
+  console.log(cpu.innerHTML = " ");
+}
+)
+
+
 
 
 
